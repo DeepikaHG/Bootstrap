@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<style>
+    .container-fluid {
+    padding: 20px;
+    background-color: Light blue;
+}
+
+/* Heading alignment */
+.container-fluid h4 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Card layout alignment */
+.container-fluid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Card styling */
+.card {
+    width: 18rem;   /* moved from inline style */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/* Image alignment */
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Text alignment */
+.card-body {
+    text-align: center;
+    padding: 15px;
+}
+
+/* Title */
+.card-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Description */
+.card-text {
+    font-size: 14px;
+    min-height: 60px;   /* keeps equal height */
+}
+
+/* Price */
+.card-body strong {
+    font-size: 16px;
+}
+
+/* Button alignment */
+.btn {
+    margin-top: 10px;
+}
+
+</style>
+</head>
+<body>
+<nav class="navbar bg-primary" data-bs-theme="dark">
+    <div class="container-fluid">
+
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="dhg logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    DHG
+                </a>
+            </div>
+        </nav>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Men</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Women</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Kids</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Electronics
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Mobile</a></li>
+                        <li><a class="dropdown-item" href="#">Laptop</a></li>
+                        <li><a class="dropdown-item" href="#">Speaker</a></li>
+                        <li><a class="dropdown-item" href="#">Tv</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+<div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="banner1.jpeg" width="200px" height="400px" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="banner2.jpeg" width="200px" height="400px" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="banner3.jpeg" width="200px" height="400px" class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+    <h4>Mens fashion</h4>
+<div class="container-fluid">
+    <div class="d-flex gap-4">
+        <div class="card" style="width: 18rem;">
+            <img src="men1.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">VeBNoR</h5>
+                <p class="card-text">
+                    Men Regular Fit Solid Button Down Collar Formal Shirt#JustHere
+                    Special price</p>
+                <p><strong style="color:red"> ₹368 </strong></p>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="men2.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">FUBAR</h5>
+                <p class="card-text">
+                    Men Regular Fit Grey Viscose Rayon Trousers
+                    Special price</p>
+                <p><strong style="color:red">₹326 </strong></p>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="men3.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">VOI JEANS</h5>
+                <p class="card-text">
+                    Men Slim Mid Rise Black Jeans</p>
+                <p><strong style="color:red">₹914 </strong></p>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="men4.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Sport Sun</h5>
+                <p class="card-text">
+                    Men Solid Polo Neck Polyester White T-Shirt
+                    Special price</p>
+                <p><strong style="color:red">₹495 </strong></p>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+        </div>
+    </div>
+</div>
+<h4>Womens fashion</h4>
+<div class="container-fluid">
+    <div class="d-flex gap-4">
+        <div class="card" style="width: 18rem;">
+            <img src="women1.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Sa Rasa</h5>
+                <p class="card-text">
+                    Women Printed Viscose Rayon Straight Kurta (Yellow)
+                    Special price</p>
+                <p><strong style="color:red"> ₹580 </strong></p>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="women2.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">FLYING MACHINE</h5>
+                <p class="card-text">
+                    Women Regular Mid Rise Blue Jeans#JustHere
+                    Special price</p>
+                <p><strong style="color:red">₹975 </strong></p>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="women3.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Wasma Fashion</h5>
+                <p class="card-text">
+                    Casual Regular Sleeves Floral Print Women White Top
+                    Special price</p>
+                <p><strong style="color:red">₹349 </strong></p>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="women4.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Badshaah</h5>
+                <p class="card-text">
+                    Women Solid Denim Jacket</p>
+                <p><strong style="color:red">₹476 </strong></p>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+        </div>
+    </div>
+</div>
+<h4>Kids fashion</h4>
+<div class="container-fluid">
+    <div class="d-flex gap-4">
+        <div class="card" style="width: 18rem;">
+            <img src="kid1.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">US KOLKATA</h5>
+                <p class="card-text">
+                    Baby Girls Midi/Knee Length Casual Dress
+                    </p>
+                <p><strong style="color:red"> ₹300 </strong></p>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="kid2.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">SK GARMENTS HUB</h5>
+                <p class="card-text">
+                    Baby Girls Midi/Knee Length Casual Dress </p>
+                <p><strong style="color:red">₹340 </strong></p>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="kid3.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">CUTIEKINS</h5>
+                <p class="card-text">
+                    Girls Casual Polyester Shirt Style Top
+                    Special price</p>
+                <p><strong style="color:red">₹420 </strong></p>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="kid4.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">HASTITAG</h5>
+                <p class="card-text">
+                    Boys Comfort Fit Solid Spread Collar Casual Shirt
+                    Special price</p>
+                <p><strong style="color:red">₹377 </strong></p>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="Footer" style="background-color:grey">
+    <div class="one" style="text-align:left">
+        <a href="">Contact Us</a>
+        <p>support@gmail.com</p>
+        <p>1st floor bvr building,Veerannapalya</p>
+        <p>banglore 566453</p>
+    </div>
+    <div class="two" style="text-align:center">
+        <input type="email" placeholder="Enter mail"><br>
+        <button>Subscribe</button>
+    </div>
+    <div class="three" style="text-align:right">
+        <a href="">Instagram</a>
+        <a href="">Facebook</a>
+        <a href="">Twitter</a>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
